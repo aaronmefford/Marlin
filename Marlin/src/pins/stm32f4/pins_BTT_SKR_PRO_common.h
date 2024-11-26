@@ -62,7 +62,8 @@
 //
 #define X_DIAG_PIN                          PB10  // X-
 #define Y_DIAG_PIN                          PE12  // Y-
-#define Z_DIAG_PIN                          PG8   // Z-
+//#define Z_DIAG_PIN                          PG8   // Z-
+#define Z_DIAG_PIN                          PA2   // Z-Probe
 #define E0_DIAG_PIN                         PE15  // E0
 #define E1_DIAG_PIN                         PE10  // E1
 #define E2_DIAG_PIN                         PG5   // E2
@@ -99,7 +100,8 @@
   #if Z_HOME_TO_MIN
     #define Z_MAX_PIN                       PG5   // E2
   #else
-    #define Z_MIN_PIN                       PG5   // E2
+    //#define Z_MIN_PIN                       PG5   // E2
+    #define Z_MIN_PIN                       PA2   // E2
   #endif
 #else
   #define Z_MIN_PIN                         PG8   // Z-
